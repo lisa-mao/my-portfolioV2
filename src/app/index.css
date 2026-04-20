@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@variant dark (&:where(.dark, .dark *));
+
+.background {
+    background-image: url("./images/kuromi-pattern.jpg");
+    background-size: 80px 80px,80px 80px;
+    background-repeat: repeat;
+
+}
+
+.gradient {
+    background: linear-gradient(to right,#c5a9bf , #ffeaef);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    text-shadow: 0px 0px 23px #372d36;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: x-large;
+    font-style: normal;
+}
+
+.jersey-10-projectLabels {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: xx-large;
+    font-style: normal;
+}
+
+.jersey {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: x-large;
+    font-style: normal;
+}
+
+.jerseyTab {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 440;
+    font-size: large;
+    font-style: italic;
+}
+
+.montserrat-text {
+                 font-family: "Montserrat", sans-serif;
+                 font-size: medium;
+                 font-weight: 400;
+                 font-style: normal;
+             }
+
+
+.noto-sans-jp- {
+                   font-family: "Noto Sans JP", sans-serif;
+    font-size: medium;
+                   font-weight: 400;
+                   font-style: normal;
+               }
+
+.noto-sans-jp-label2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: large;
+    font-weight: 440;
+    font-style: italic;
+}
+
+.folder {
+    clip-path: polygon(0 0 , 92% 0, 98% 98%, 100% 100%,0 98% ,0 100%);
+    height: 39px;
+    width: 134px;
+
+}
+
+.tab {
+    clip-path: polygon(0 0 , 89% 0, 96% 90%, 95% 90%,0 90% ,0 100%);
+    background: #372d36;
+    height: 36px;
+    width: 140px;
+}
+
+@theme {
+    --animate-wiggle: wiggle 0.9s ease-in-out infinite;
+    @keyframes wiggle {
+        0%,
+        100% {
+            transform: rotate(-6deg);
+        }
+        50% {
+            transform: rotate(6deg);
+        }
+    }
+}
