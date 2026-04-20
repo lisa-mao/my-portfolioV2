@@ -1,23 +1,26 @@
 import { Resend } from 'resend';
+import { NextResponse } from 'next/server';
+import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
+
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export default async function handler(req, res) {
-    if (req.method !== 'POST') {
-        return res.status(405).json({ error: 'Method not allowed' });
-    }
-
-    const { email, message } = req.body;
-    if (!email || !email.includes('@') || !message) {
-        return res.status(400).json({ error: 'Vul een geldig e-mailadres en bericht in.' });
-    }
-
+export async function POST(request) {
     try {
+        const { email, message } = await request.json();
+
+        if (!email || !email.includes('@') || !message) {
+            return NextResponse.json(
+                { error: 'Vul een geldig e-mailadres en bericht in.' },
+                { status: 400 }
+            );
+        }
+
         const data = await resend.emails.send({
             from: 'Portfolio <contact@lisamao.nl>',
             to: ['email.lisamao@gmail.com'],
             reply_to: email,
-            subject: `Contactformulier: ${email}`, // Added email to subject for easier searching
+            subject: `Contactformulier: ${email}`,
             html: `
                 <div style="font-family: sans-serif; padding: 20px; color: #333;">
                     <h2 style="border-bottom: 2px solid #000; padding-bottom: 10px;">Nieuw bericht</h2>
@@ -30,13 +33,16 @@ export default async function handler(req, res) {
         });
 
         if (data.error) {
-            console.error("Resend API Logic Error:", data.error);
-            return res.status(400).json({ error: data.error.message });
+            return NextResponse.json({ error: data.error.message }, { status: 400 });
         }
 
-        return res.status(200).json({ success: true });
+        return NextResponse.json({ success: true }, { status: 200 });
+
     } catch (error) {
-        console.error("Connection Error:", error);
-        return res.status(500).json({ error: 'Serverfout bij het verzenden.' });
+        console.error("Resend Error:", error);
+        return NextResponse.json(
+            { error: 'Serverfout bij het verzenden.' },
+            { status: 500 }
+        );
     }
 }

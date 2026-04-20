@@ -14,7 +14,7 @@ export default function Contact() {
         };
 
         try {
-            const res = await fetch("src/pages/api/contact.js", {
+            const res = await fetch("pages/api/route.js", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),
