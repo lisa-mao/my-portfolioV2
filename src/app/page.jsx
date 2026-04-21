@@ -98,6 +98,7 @@ export default function AboutMe() {
                         functies waar de gebruiker misschien niet direct over nadenkt, maar die de ervaring wel
                         vlekkeloos maken!
                     </p>
+                    <a className="underline pt-2 p-2 select-none noto-sans-jp text-sm leading-relaxed" href="https://github.com/lisa-mao">Mijn github</a>
                 </div>
             </section>
         </main>
