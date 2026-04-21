@@ -1,4 +1,4 @@
-#HII welcome to my portfolio made with Next.js!!
+# HII welcome to my portfolio made with Next.js!!
 
 A clean, responsive portfolio built to showcase my web development projects and technical skills.
 
@@ -13,9 +13,9 @@ and loads incredibly fast.
 
 //////
 
-# How to run locally
+<h1>How to run locally</h1>
 npm install
-# Add your RESEND_API_KEY to .env
+<h1>Add your RESEND_API_KEY to .env</h1>
 npm run dev
 
 //////
