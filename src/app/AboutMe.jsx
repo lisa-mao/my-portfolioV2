@@ -14,7 +14,7 @@ export default function AboutMe() {
     };
 
     return (
-        <main className="grid grid-cols-1 md:grid-cols-[auto_minmax(300px,350px)] gap-6 p-6 h-fit w-full max-w-6xl mx-auto items-start justify-center">
+        <main className="grid grid-cols-1 md:grid-cols-[auto_minmax(260px,350px)] gap-6 p-6 h-fit w-full max-w-6xl mx-auto items-start justify-center">
             <section className="flex md:flex-row flex-col gap-4 h-full items-start">
                 <div className="bg-white flex justify-center items-center h-auto w-full md:w-[350px] border-[#372d36] rounded-xl border-solid border-2 overflow-hidden shrink-0 shadow-sm">
                     <SpiderChart />
@@ -44,7 +44,7 @@ export default function AboutMe() {
                                     className="w-10 h-21 hover:animate-wiggle cursor-help"
                                     src="/items/mouse.png"
                                     alt="computer muis"
-                                    onMouseOver={() => handleMouseOver("Een computer muis maakt je leven vele malen makkelijker.")}
+                                    onMouseOver={() => handleMouseOver("Mijn computer muis.")}
                                     onMouseOut={handleMouseOut}
                                 />
                             </div>
@@ -93,7 +93,10 @@ export default function AboutMe() {
                 <div className="bg-white border-[#372d36] rounded-xl border-solid border-2 w-full max-w-[320px] flex-grow overflow-hidden">
                     <h1 className="p-2 select-none noto-sans-jp font-thin tracking-[0.15rem] text-xl border-b bg-black text-white border-gray-200 mb-1">Biografie</h1>
                     <p className="p-2 select-none noto-sans-jp text-sm leading-relaxed">
-                        Hoii!! Ik ben een Fullstack Developer met een scherp oog voor wat een applicatie écht succesvol maakt...
+                        Hoii!! Ik ben een Fullstack Developer met een scherp oog voor wat een applicatie écht succesvol
+                        maakt. Ik geloof dat de kracht van elk project schuilt in de details: die subtiele maar cruciale
+                        functies waar de gebruiker misschien niet direct over nadenkt, maar die de ervaring wel
+                        vlekkeloos maken!
                     </p>
                 </div>
             </section>

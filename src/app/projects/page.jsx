@@ -1,28 +1,28 @@
 'use client'
-import {Link} from "react-router-dom";
+import Link from "next/link";
 import {useState} from "react";
-import ImageModal from "./components/ImageModalComponent.jsx";
+import ImageModal from "../components/ImageModalComponent.jsx";
 
 export default function MyProjects() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const loongcakesImages = [
         {
-            id: 1, src:"public/loongcakes/homepage.png", alt: "homepagina"
+            id: 1, src:"/loongcakes/homepage.png", alt: "homepagina"
         },
         {
-            id: 2, src:"public/loongcakes/myRecipe.png", alt: "Mijn recepten"
+            id: 2, src:"/loongcakes/myRecipe.png", alt: "Mijn recepten"
         },
         {
-            id: 3, src:"public/loongcakes/showRecipe.png", alt: "Bekijk recept"
+            id: 3, src:"/loongcakes/showRecipe.png", alt: "Bekijk recept"
         },
         {
-            id: 4, src:"public/loongcakes/createRecipe.png", alt: "Creeër recept"
+            id: 4, src:"/loongcakes/createRecipe.png", alt: "Creeër recept"
         },
         {
-            id: 5, src:"public/loongcakes/aboutUs.png", alt: "Over ons"
+            id: 5, src:"/loongcakes/aboutUs.png", alt: "Over ons"
         },
         {
-            id: 6, src:"public/loongcakes/contact.png", alt: "Contact"
+            id: 6, src:"/loongcakes/contact.png", alt: "Contact"
         },
     ]
     return (
@@ -31,7 +31,7 @@ export default function MyProjects() {
                 <div className="md:hidden">
                     <div>
                         <button className=" border-2  border-black border-solid bg-white rounded-sm">
-                            <Link to="/figma-showcase"
+                            <Link href="/figmashowcase"
                                   className=" cursor-pointer text-center noto-sans-jp select-none text-[#372d36] ">Mijn UI/UX
                                 ontwerpen</Link>
                         </button>
@@ -91,7 +91,7 @@ export default function MyProjects() {
                     <div>
                         <div>
                             <button className="hidden md:block border-2 pr-2 border-black border-solid bg-white rounded-sm">
-                                <Link to="/figma-showcase"
+                                <Link href="/figmashowcase"
                                       className=" p-3 cursor-pointer noto-sans-jp select-none text-[#372d36] ">UI/UX
                                     ontwerpen</Link>
                             </button>
