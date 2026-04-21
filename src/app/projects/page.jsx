@@ -28,6 +28,7 @@ export default function MyProjects() {
     return (
         <section className="p-5 flex justify-center flex-row md:flex-col">
             <div className="flex flex-col gap-2">
+
                 <div className="md:hidden">
                     <div>
                         <button className=" border-2  border-black border-solid bg-white rounded-sm">
@@ -39,12 +40,12 @@ export default function MyProjects() {
                 </div>
                 <div className="flex md:flex-row flex-col gap-4 ">
                     <div
-                        className="bg-white p-2 flex flex-col md:flex-row pb-1 pt-1 md:gap-4 justify-center border-black border-2 border-solid">
+                        className="bg-white rounded-2xl p-2 flex flex-col md:flex-row pb-1 pt-1 md:gap-4 justify-center border-black border-2 border-solid">
                         <div className="flex flex-col">
                             <h1 className="font-stretch-50% jersey-10-projectLabels">Loong Cakes</h1>
                             <button onClick={() => setIsModalOpen(true)} className="cursor-pointer">
                                 <img alt="homepage" className="md:w-140 md:h-70 w-140 h-70border-black border-2 border-solid "
-                                     src="/loongcakes/homepage_400x191.png"/>
+                                     src="/loongcakes/homepage.png"/>
                             </button>
                         </div>
 

@@ -22,14 +22,11 @@ export default function FigmaShowcase() {
     ]
     return (
         <main>
-            <div
-                className="pl-4 m-3 pr-4 flex items-start gap-4 justify-between md:max-h-[450px]  ">
 
-                <h1 className="jersey-10-regular">Mijn UI/UX ontwerpen</h1>
-            </div>
             <section className=" flex flex-col gap-1 h-full w-full text-black">
+
                 <div
-                    className="p-4 m-5 flex flex-col md:flex-row items-start gap-4 border-2 border-black border-solid rounded-xl bg-white">
+                    className="p-4 m-5 flex flex-col md:flex-row items-start gap-4 border-2 border-black border-solid rounded-2xl bg-white">
                     <div className="flex flex-col">
                         <h1 className="font-stretch-50% jersey-10-projectLabels">SkillSwap</h1>
                         <button onClick={() => setIsModalOpen(true)} className="cursor-pointer">
