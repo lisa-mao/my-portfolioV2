@@ -22,9 +22,7 @@ export default function FigmaShowcase() {
     ]
     return (
         <main>
-
             <section className=" flex flex-col gap-1 h-full w-full text-black">
-
                 <div
                     className="p-4 m-5 flex flex-col md:flex-row items-start gap-4 border-2 border-black border-solid rounded-2xl bg-white">
                     <div className="flex flex-col">
