@@ -15,7 +15,7 @@ and loads incredibly fast.
 
 <h1>How to run locally</h1>
 npm install
-<h1>Add your RESEND_API_KEY to .env</h1>
+<br/>
 npm run dev
 
 //////
