@@ -1,3 +1,4 @@
+'use client'
 import { useState } from "react";
 
 export default function Contact() {
@@ -14,7 +15,7 @@ export default function Contact() {
         };
 
         try {
-            const res = await fetch("pages/api/route.js", {
+            const res = await fetch("api", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(data),

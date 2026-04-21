@@ -1,35 +1,28 @@
+'use client'
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import ImageModal from "../components/ImageModalComponent.jsx";
-
-
-import homepage from '../images/loongcakes/homepage_400x191.png';
-import myRecipe from '../images/loongcakes/myRecipe.png';
-import aboutMe from '../images/loongcakes/aboutUs.png';
-import contact from '../images/loongcakes/contact.png';
-import createRecipe from '../images/loongcakes/createRecipe.png';
-import showRecipe from '../images/loongcakes/showRecipe.png';
+import ImageModal from "./components/ImageModalComponent.jsx";
 
 export default function MyProjects() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const loongcakesImages = [
         {
-            id: 1, src: homepage, alt: "homepagina"
+            id: 1, src:"public/loongcakes/homepage.png", alt: "homepagina"
         },
         {
-            id: 2, src: myRecipe, alt: "Mijn recepten"
+            id: 2, src:"public/loongcakes/myRecipe.png", alt: "Mijn recepten"
         },
         {
-            id: 3, src: showRecipe, alt: "Bekijk recept"
+            id: 3, src:"public/loongcakes/showRecipe.png", alt: "Bekijk recept"
         },
         {
-            id: 4, src: createRecipe, alt: "Creeër recept"
+            id: 4, src:"public/loongcakes/createRecipe.png", alt: "Creeër recept"
         },
         {
-            id: 5, src: aboutMe, alt: "Over ons"
+            id: 5, src:"public/loongcakes/aboutUs.png", alt: "Over ons"
         },
         {
-            id: 6, src: contact, alt: "Contact"
+            id: 6, src:"public/loongcakes/contact.png", alt: "Contact"
         },
     ]
     return (
@@ -51,7 +44,7 @@ export default function MyProjects() {
                             <h1 className="font-stretch-50% jersey-10-projectLabels">Loong Cakes</h1>
                             <button onClick={() => setIsModalOpen(true)} className="cursor-pointer">
                                 <img alt="homepage" className="md:w-140 md:h-70 w-140 h-70border-black border-2 border-solid "
-                                     src={homepage}/>
+                                     src="/loongcakes/homepage_400x191.png"/>
                             </button>
                         </div>
 

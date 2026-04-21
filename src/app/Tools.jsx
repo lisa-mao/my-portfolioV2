@@ -1,3 +1,4 @@
+'use client'
 import {GiNewShoot} from "react-icons/gi";
 import {LuEye} from "react-icons/lu";
 import {FaPeopleGroup} from "react-icons/fa6";

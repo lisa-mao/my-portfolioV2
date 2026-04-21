@@ -1,7 +1,5 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
-import process from "next/dist/build/webpack/loaders/resolve-url-loader/lib/postcss";
-
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 

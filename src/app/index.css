@@ -2,8 +2,8 @@
 @variant dark (&:where(.dark, .dark *));
 
 .background {
-    background-image: url("./images/kuromi-pattern.jpg");
-    background-size: 80px 80px,80px 80px;
+    background-image: url("/kuromi-pattern.jpg");
+    background-size: 80px 80px;
     background-repeat: repeat;
 
 }

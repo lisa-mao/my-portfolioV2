@@ -1,26 +1,21 @@
-import {Link} from "react-router-dom";
-import homepage from "../images/figmaShowcase/home.png";
-import marketplace from "../images/figmaShowcase/marketplace.png";
-import service from "../images/figmaShowcase/selectedService.png";
-import styleguide from "../images/figmaShowcase/styleguide.png";
-
+'use client'
 import {useState} from "react";
-import ImageModal from "../components/ImageModalComponent.jsx";
+import ImageModal from "./components/ImageModalComponent.jsx";
 
 export function FigmaShowcase() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const skillswapImages = [
         {
-            id: 1, src: homepage, alt: "Homepagina"
+            id: 1, src:"/figmaShowcase/home.png", alt: "Homepagina"
         },
         {
-            id: 2, src: marketplace, alt: "Marktplaats"
+            id: 2, src:"/figmaShowcase/marketplace.png", alt: "Marktplaats"
         },
         {
-            id: 3, src: service, alt: "Bekijk service"
+            id: 3, src:"/figmaShowcase/selectedService.png", alt: "Bekijk service"
         },
         {
-            id: 4, src: styleguide, alt: "Styleguide"
+            id: 4, src:"/figmaShowcase/styleguide.png", alt: "Styleguide"
         },
 
 
@@ -39,7 +34,7 @@ export function FigmaShowcase() {
                         <h1 className="font-stretch-50% jersey-10-projectLabels">SkillSwap</h1>
                         <button onClick={() => setIsModalOpen(true)} className="cursor-pointer">
                             <img alt="homepage" className="w-140 h-70 border-black border-2 border-solid "
-                                 src={homepage}/>
+                                 src="/figmaShowcase/home.png"/>
                         </button>
                     </div>
                     <div
