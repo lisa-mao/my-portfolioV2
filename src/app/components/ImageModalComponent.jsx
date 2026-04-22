@@ -16,7 +16,7 @@ export default function ImageModal({ isOpen, onClose, images }) {
 
     return (
         <div
-            className="absolute inset-0 z-[100] md:top-0 top-23 flex items-center justify-center bg-black/90 backdrop-blur-md animate-in fade-in duration-300 p-4 md:p-10 md:max-w-full md:max-h-full max-w-full max-h-fit"
+            className="absolute inset-0 z-[100] md:top-0 top-23 flex items-center justify-center bg-black/90 backdrop-blur-md animate-in fade-in duration-300 p-4 md:p-10 md:max-w-full md:max-h-full max-w-full max-h-1/2"
             onClick={onClose}>
             <div
                 className="relative w-full max-w-6xl h-full max-h-[40vh] md:max-h-[85vh] flex flex-col items-center justify-center"
