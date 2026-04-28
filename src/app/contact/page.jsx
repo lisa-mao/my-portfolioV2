@@ -39,7 +39,7 @@ export default function Contact() {
             <h2 className="jersey text-3xl mb-2 tracking-wider">Samen iets moois bouwen?</h2>
 
             <form onSubmit={handleSubmit} className="w-full max-w-[500px] bg-white border-2 border-black rounded-xl pb-1 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-                <div className="bg-black p-2 text-center">
+                <div className="bg-black rounded-lg p-2 text-center">
                     <p className="noto-sans-jp font-thin text-white text-xs tracking-widest uppercase">Nieuw Bericht</p>
                 </div>
 

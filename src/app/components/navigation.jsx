@@ -47,20 +47,20 @@ export default function Navigation() {
             <div className="hidden md:flex gap-1 flex-row items-start m-2 mb-0 overflow-hidden">
                 {menuItems.map((item) => (
                     <div key={item.path} className="tab shrink-0">
-                        <div
-                            className={`bg-amber-100 relative z-10 rounded-tr-md border-[#372d36] border-solid border-2 px-1 py-2 flex items-center transition-all ${
-                                pathname === item.path
-                                    ? "bg-amber-50 border-b-0 -mb-[2px] h-11"
-                                    : "border-b-2 h-10 hover:bg-black/10"
-                            }`}
-                        >
-                            <Link href={item.path} className="flex items-center h-full">
+                        <Link href={item.path} className="flex items-center h-full">
+                            <div
+                                className={`bg-amber-100 relative z-10 rounded-tr-md w-full border-[#372d36] border-solid border-2 px-1 py-2 flex items-center transition-all ${
+                                    pathname === item.path
+                                        ? "bg-amber-50 border-b-0 -mb-[2px] h-11"
+                                        : "border-b-2 h-10 hover:bg-amber-200"
+                                }`}
+                            >
                                 <span
                                     className="cursor-pointer jerseyTab text-s select-none text-[#372d36] whitespace-nowrap">
                                     {item.name}
                                 </span>
-                            </Link>
-                        </div>
+                            </div>
+                        </Link>
                     </div>
                 ))}
             </div>

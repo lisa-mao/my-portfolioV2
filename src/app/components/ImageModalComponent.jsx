@@ -24,7 +24,7 @@ export default function ImageModal({ isOpen, onClose, images }) {
 
                 <button
                     onClick={onClose}
-                    className="absolute top-2 right-2 md:-top-12 md:right-0 z-[110] text-white/70 hover:text-white transition-colors bg-black/20 md:bg-transparent p-2 md:p-0 rounded-full"
+                    className="absolute top-2 right-2  md:-top-12 md:pt-2 md:right-0 z-[110] text-white/70 hover:text-white transition-colors bg-black/20 md:bg-transparent p-2 md:p-0 rounded-full"
                 >
                     <X size={32} className="md:w-10 md:h-10" />
                 </button>
