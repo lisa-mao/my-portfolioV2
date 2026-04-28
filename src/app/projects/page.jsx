@@ -92,9 +92,9 @@ export default function MyProjects() {
                     </div>
                     <div>
                         <div>
-                            <button className="hidden md:block border-2 pr-2 border-black border-solid bg-white rounded-sm">
+                            <button className="hidden md:block border-2 p-2 border-black border-solid bg-white rounded-sm">
                                 <Link href="/figmashowcase"
-                                      className=" p-3 cursor-pointer noto-sans-jp select-none text-[#372d36] ">UI/UX
+                                      className="  cursor-pointer noto-sans-jp select-none text-[#372d36] ">UI/UX
                                     ontwerpen</Link>
                             </button>
                         </div>
